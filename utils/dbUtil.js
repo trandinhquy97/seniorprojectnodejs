@@ -14,11 +14,22 @@ const StatusStoreModel = require("../models/statusStore")
 const ExpiredTokenModel = require("../models/expiredToken")
 const CardLineModel = require("../models/cardLine")
 
+// var config = {
+//   username: 'root',
+//   password: null,
+//   database: 'test',
+//   host: 'localhost',
+//   dialect: 'mysql',
+//   define: {
+//     timestamps: false
+//   },
+//   // logging: false
+// };
 var config = {
-  username: 'root',
-  password: null,
-  database: 'test',
-  host: 'localhost',
+  username: 'bfa03816f62b18',
+  password: 'a5887819',
+  database: 'heroku_4b190ba005a2c1d',
+  host: 'us-cdbr-iron-east-02.cleardb.net',
   dialect: 'mysql',
   define: {
     timestamps: false
