@@ -5,17 +5,17 @@ const busboyBodyParser = require('busboy-body-parser')
 
 const app = express()
 app.use(busboy())
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 app.use(busboyBodyParser())
 
-const port = 3000
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
     console.log(`Running on http://localhost:${port}`)
 })
 
-app.post('/api/books', function(req, res) {
+app.post('/api/books', function (req, res) {
     var book_id = req.body.id;
     var bookName = req.body.token;
     //Send the response back
