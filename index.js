@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json())
 app.use(busboyBodyParser())
 
-const port = 5000
+const port = 3000
 
 app.listen(port, () => {
     console.log(`Running on http://localhost:${port}`)
