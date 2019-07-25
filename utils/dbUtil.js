@@ -26,10 +26,10 @@ const CardLineModel = require("../models/cardLine")
 //   // logging: false
 // };
 var config = {
-  username: 'bfa03816f62b18',
-  password: 'a5887819',
-  database: 'heroku_4b190ba005a2c1d',
-  host: 'us-cdbr-iron-east-02.cleardb.net',
+  username: 'sql12299727',
+  password: '1Dry9bRY9M',
+  database: 'sql12299727',
+  host: 'sql12.freesqldatabase.com',
   dialect: 'mysql',
   define: {
     timestamps: false
@@ -109,7 +109,7 @@ const fakeDB = async () => {
   let sttPro2 = await StatusProduct.create({
     name: "Out of stock"
   })
-  
+
   //Fake typeProduct
   let tPro1 = await TypeProduct.create({
     name: "Drinking"
